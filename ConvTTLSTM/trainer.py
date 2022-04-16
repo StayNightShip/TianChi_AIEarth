@@ -143,7 +143,7 @@ if __name__ == '__main__':
     print(configs.__dict__)
 
     print('\nreading data')
-    sst_train, nino_train, sst_eval, nino_eval, sst_test, nino_test = prepare_data('tcdata/enso_round1_train_20210201')
+    sst_train, nino_train, sst_eval, nino_eval, sst_test, nino_test = prepare_data('../input/ninoprediction')
 
     print('processing training set')
     dataset_train = cmip_dataset(sst_train[0], nino_train[0], sst_train[1], nino_train[1], samples_gap=5)
